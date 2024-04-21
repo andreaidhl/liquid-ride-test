@@ -1,0 +1,7 @@
+{% comment %}
+Test liquid, outputs  italics for letter O in any word.
+{% endcomment %}
+
+{% assign title = title | replace: 'o', '<i>o</i>' | replace: 'O', '<i>O</i>' %} 
+
+{{ title }}
